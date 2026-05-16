@@ -1,0 +1,10 @@
+{
+  "Google Workspace": [".google.com", ".googlemail.com"],
+  "Microsoft 365": [".mail.protection.outlook.com"],
+  "Yahoo": [".yahoodns.net"],
+  "Zoho": [".zoho.com", ".zoho.eu"],
+  "ProtonMail": [".protonmail.ch"],
+  "iCloud": [".icloud.com", ".apple.com"],
+  "Yandex": [".yandex.net"],
+  "Mail.ru": [".mail.ru"]
+}

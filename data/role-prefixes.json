@@ -1,0 +1,10 @@
+[
+  "abuse", "admin", "billing", "compliance", "devnull",
+  "dns", "ftp", "hostmaster", "info", "inoc",
+  "ispfeedback", "ispsupport", "list", "list-request", "maildaemon",
+  "marketing", "noc", "no-reply", "noreply", "null",
+  "office", "phish", "phishing", "postmaster", "privacy",
+  "registrar", "root", "sales", "security", "spam",
+  "support", "sysadmin", "tech", "undisclosed-recipients", "unsubscribe",
+  "usenet", "uucp", "webmaster", "www"
+]
