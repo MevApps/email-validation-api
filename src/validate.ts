@@ -60,8 +60,9 @@ export async function validateEmail(
   if (mxResult.found && mxResult.records.length > 0) {
     const primaryMx = mxResult.records.sort((a, b) => a.priority - b.priority)[0]
     mxProvider = identifyMxProvider(primaryMx.exchange)
-    const mxIp = await resolveMxIp(primaryMx.exchange, resolver)
-    blacklisted = await checkBlacklist(mxIp, resolver)
+    // DNSBL disabled: all major providers return false positives from Cloudflare's 1.1.1.1 resolver
+    // const mxIp = await resolveMxIp(primaryMx.exchange, resolver)
+    // blacklisted = await checkBlacklist(mxIp, resolver)
   }
 
   const facts: EmailFacts = {

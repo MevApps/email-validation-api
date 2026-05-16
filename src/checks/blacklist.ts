@@ -26,8 +26,8 @@ export async function checkBlacklist(
 
   const checks = DNSBL_ZONES.map(async (zone) => {
     try {
-      await resolver.resolve4(`${reversed}.${zone}`)
-      return true
+      const ips = await resolver.resolve4(`${reversed}.${zone}`)
+      return ips.some((ip) => ip.startsWith("127."))
     } catch {
       return false
     }
